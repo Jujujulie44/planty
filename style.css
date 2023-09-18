@@ -1,0 +1,95 @@
+/*
+Theme Name : Planty
+Template: _s-master
+Author: Julie André
+Description: _s-master child theme for Planty
+Version: 1.0.0
+*/
+
+
+/*
+COLOR SITE 
+vert titres : #3B8E46
+ROSé titre : #d2776a
+rosé (bouton nav): #DC9F96
+rosé clair (bouton site et +/- page commander) : #E0B9B4 
+fraise : #C02E44
+white : #FFFFFF
+background : #ede2da
+*/
+
+/*FONT */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&family=Syne&display=swap');
+
+
+/********HEADER**********/ 
+
+.custom-logo {
+    margin-top: 50px;
+    width:150px;
+    height: 20px;
+}
+
+/*retire le bouton PRIMARY MENU*/
+.menu-toggle{
+    display: none;
+}
+
+
+/*******NAV**************/
+
+.menu-item{
+    list-style: none;
+}
+
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+
+.site-header a  {
+    color: black;
+    text-decoration: none;
+    padding-right: 50px;
+    padding-left: 50px;
+    height: 40px;
+}
+
+.main-navigation{
+    padding-top: 30px;
+    background-color: blue;
+}
+
+/*.main-navigation:hover {
+    
+}*/
+
+.main-navigation ul {
+    margin-right: 100px;
+    display: flex;
+}
+.main-navigation li:hover {
+    background-color:#DC9F96 ;
+}
+
+/********BODY********/
+/*
+h1.entry-title {
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    color: #3B8E46;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 70px;
+}
+
+.post-7 {
+    background-color: #ede2da ;
+}
+
+.wp-block-image {
+    
+}
+*/
