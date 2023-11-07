@@ -6,9 +6,11 @@
 ?>
 
 	<footer class="footer">
+		
 		<div class="footer-info">
-			<a><p>Mentions légales</p></a>
+			<a href="<?php echo mentionslegales.php; ?>">Mentions légales</a>
 		</div><!-- .site-info -->
+
 	</footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
