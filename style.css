@@ -26,8 +26,7 @@ background vert : #3B8E46
 /********HEADER**********/ 
 
 .custom-logo {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
     width:160px;
     height: 30px;
 }
@@ -57,10 +56,6 @@ background vert : #3B8E46
     padding-left: 30px;
 }
 
-.main-navigation{
-    padding-top: 10px;
-}
-
 .main-navigation ul {
     list-style: none;
     display: flex;
@@ -68,7 +63,8 @@ background vert : #3B8E46
 }
 
 .main-navigation  ul li:hover {
-    height: 100%;
+   /* width:100px;
+    height: 100px;*/
     background-color:#DC9F96 ;
 }
 
@@ -131,8 +127,8 @@ background vert : #3B8E46
 .NomCommande,
 .PrenomCommande,
 .EmailCommande {
-    height: 70px; 
-    border-radius: 10px;
+    height: 50px; 
+    border-radius: 5px;
     margin-top: 20px;
     width: 280px;
     border-color: #3B8E46;
@@ -142,14 +138,12 @@ background vert : #3B8E46
 
 .btnCommander{
     font-size: 15px;
-    margin-top: 10%;
     margin-left:30%;
-    height: 50px;
     width: 160px;
     background-color: #E0B9B4 ;
     color: white; 
     font-family: 'Syne', sans-serif;
-    border-radius: 10px;
+    border-radius: 5px;
     border-color: #E0B9B4;
     border-bottom: #E0B9B4;
     border-right: #E0B9B4;
@@ -160,26 +154,36 @@ background vert : #3B8E46
 
 
 .title-formulaire {
+    padding-bottom: 15px;
     color: white; 
 }
 
+.formulaire-entier{
+    display: flex;
+}
+
 .part1 {
-    padding-top: 100px;
+    padding-top: 30px;
     display: inline-block; 
    flex-direction: left;
 }
 .part2{
-    display: inline-block; 
-    flex-direction: right;
-    margin-left: 104px;
+    margin-left: 50px;
+    padding-top: 30px;
+    display: inline-block;
+}
+
+.vertical-separator {
+    margin-left: 50px;
+    border: 0.2px solid white;
+    margin-top: 55px;
+    margin-bottom: 10px;
 }
 
 .btnCommande{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
     margin-right: 10%;
-    align-items: center;
 }
 
 
@@ -257,6 +261,11 @@ input{
 .quantity-product {
     display: flex!important;
     flex-direction: row!important;
+}
+
+.elementor hr {
+    margin-top: 30px!important;
+    background-color: white!important;
 }
 
 .clear {
