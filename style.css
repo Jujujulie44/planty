@@ -9,13 +9,14 @@ Version: 1.0.0
 
 /*
 COLOR SITE 
-vert titres : #3B8E46
+vert titres :#3B8E46
 ROSé titre : #d2776a
 rosé (bouton nav): #DC9F96
 rosé clair (bouton site et +/- page commander) : #E0B9B4 
 fraise : #C02E44
 white : #FFFFFF
-background : #ede2da
+background beige: #ede2da
+background vert : #3B8E46
 */
 
 /*FONT */
@@ -25,9 +26,10 @@ background : #ede2da
 /********HEADER**********/ 
 
 .custom-logo {
-    margin-top: 50px;
-    width:150px;
-    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:160px;
+    height: 30px;
 }
 
 /*retire le bouton PRIMARY MENU*/
@@ -46,50 +48,244 @@ background : #ede2da
 .site-header {
     display: flex;
     justify-content: space-between;
-    background-color: red;
 }
 
 .site-header a  {
     color: black;
     text-decoration: none;
-    padding-right: 50px;
-    padding-left: 50px;
-    height: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .main-navigation{
-    padding-top: 30px;
-    background-color: blue;
+    padding-top: 10px;
 }
-
-/*.main-navigation:hover {
-    
-}*/
 
 .main-navigation ul {
-    margin-right: 100px;
+    list-style: none;
     display: flex;
+    font-family: 'Syne', sans-serif;
 }
-.main-navigation li:hover {
+
+.main-navigation  ul li:hover {
+    height: 100%;
     background-color:#DC9F96 ;
 }
 
-/********BODY********/
-/*
-h1.entry-title {
-    text-align: center;
+
+/******FORMULAIRE DE CONTACT*******/
+
+
+.elementor-element {
+    color: black; 
     font-family: 'Syne', sans-serif;
-    color: #3B8E46;
-    font-size: 50px;
-    font-weight: bold;
-    padding-top: 70px;
 }
 
-.post-7 {
-    background-color: #ede2da ;
+.NomContact,
+.EmailContact {
+    border-radius: 5px;
+    height: 60px; 
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-color: #EDE2DA;
+    border-left: #EDE2DA;
+    border-top:#EDE2DA;
 }
 
-.wp-block-image {
+.MessageContact {
+    width: 100%;
+    margin-top: 10px;
+    border-color: #EDE2DA;
+    border-left: #EDE2DA;
+    border-top:#EDE2DA;
+    border-radius: 5px;
+}
+
+.btnContact {
+    font-size: 15px;
+    margin-top: 10%;
+    margin-left:30%;
+    height: 40px;
+    width: 130px;
+    background-color: #E0B9B4 ;
+    color: white; 
+    font-family: 'Syne', sans-serif;
+    border-radius: 5px;
+    border-color: #E0B9B4;
+    border-bottom: #E0B9B4;
+    border-right: #E0B9B4;
+}
+
+/****FORMULAIRE DE COMMANDES*****/
+
+/**** BTN Quantité ****/
+
+.LabelCommande{
+    color:white; 
+}
+
+.AdresseCommande,
+.CodepostalCommande,
+.VilleCommande,
+.NomCommande,
+.PrenomCommande,
+.EmailCommande {
+    height: 70px; 
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 280px;
+    border-color: #3B8E46;
+    border-left: #3B8E46;
+    border-top: #3B8E46;
+}
+
+.btnCommander{
+    font-size: 15px;
+    margin-top: 10%;
+    margin-left:30%;
+    height: 50px;
+    width: 160px;
+    background-color: #E0B9B4 ;
+    color: white; 
+    font-family: 'Syne', sans-serif;
+    border-radius: 10px;
+    border-color: #E0B9B4;
+    border-bottom: #E0B9B4;
+    border-right: #E0B9B4;
     
 }
-*/
+
+/********* Formulaire commandes /DIV Colonnes/ ********/
+
+
+.title-formulaire {
+    color: white; 
+}
+
+.part1 {
+    padding-top: 100px;
+    display: inline-block; 
+   flex-direction: left;
+}
+.part2{
+    display: inline-block; 
+    flex-direction: right;
+    margin-left: 104px;
+}
+
+.btnCommande{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 10%;
+    align-items: center;
+}
+
+
+/****** BOUTONS QUANTITE ****/ 
+
+.minus, .plus{
+    cursor: pointer;
+    background-color: #DC9F96;
+    color:white; 
+	display: flex;
+    justify-content: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 0 4px 0 0;
+    border: 1px solid #E0B9B4;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.minus{
+    border-radius: 0 0 4px 0;
+    margin-top: -20px;
+    border-top-color: white
+}
+
+.number{
+    margin-top: -30px;
+    display: flex;
+    flex-direction: row;
+
+}
+.number-child {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+}
+
+.input-value{
+    display: flex;
+}
+
+.span-value{
+    display:flex;
+    flex-direction: column;
+}
+
+
+input{
+    color: grey;
+    border-color: white;
+    border-radius: 4px 0 0 4px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid white;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.validation-button {
+    border-color: #DC9F96;
+    border-bottom: #DC9F96;
+    border-right: #DC9F96;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:  #E0B9B4;
+    color: white; 
+    margin-left: 10px;
+    height: 45px;
+    width: 71px;
+}
+
+.quantity-product {
+    display: flex!important;
+    flex-direction: row!important;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/***** FORMULAIRE ERRONE ***/ 
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+    border-color: #DC9F96;
+}
+
+/******REPONSE FORMULAIRE******/
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: #E0B9B4;
+    color: white;
+    height: 80px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+
+/******** FOOTER *****/ 
+
+.footer-info{
+    font-family: 'Syne', sans-serif;
+    text-align: center;
+}
