@@ -9,15 +9,28 @@ Version: 1.0.0
 
 /*
 COLOR SITE 
-vert titres :#3B8E46
-ROSé titre : #d2776a
-rosé (bouton nav): #DC9F96
-rosé clair (bouton site et +/- page commander) : #E0B9B4 
-fraise : #C02E44
-white : #FFFFFF
-background beige: #ede2da
-background vert : #3B8E46
+vert titres :#3B8E46 //
+ROSé titre : #d2776a 
+rosé (bouton nav): #DC9F96//
+rosé clair (bouton site et +/- page commander) : #E0B9B4 //
+fraise : #C02E44 
+white : #FFFFFF //
+background beige: #ede2da //
+background vert : #3B8E46 //
 */
+
+
+
+:root {
+  --green-color-title: #3B8E46; /*var(--green-color-title) */
+  --pink-color-nav :  #DC9F96; /*var(--pink-color-nav)*/
+  --pink-color-quantity-button : #E0B9B4 ; /*var(--pink-color-quantity-button)*/
+  --background-beige : #EDE2DA ; /* var(--background-beige)*/
+  --white-color : #FFFFFF; /* var(--white-color)*/
+  --black-color : #000; /* var(--black-color)*/
+  --grey-color :  grey; /* var(--grey-color)*/ 
+}
+
 
 /*FONT */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&family=Syne&display=swap');
@@ -50,7 +63,7 @@ background vert : #3B8E46
 }
 
 .site-header a  {
-    color: black;
+    color: var(--black-color);
     text-decoration: none;
     padding-right: 30px;
     padding-left: 30px;
@@ -65,7 +78,7 @@ background vert : #3B8E46
 .main-navigation  ul li:hover {
    /* width:100px;
     height: 100px;*/
-    background-color:#DC9F96 ;
+    background-color:var(--pink-color-nav);
 }
 
 
@@ -73,7 +86,7 @@ background vert : #3B8E46
 
 
 .elementor-element {
-    color: black; 
+    color: var(--black-color); 
     font-family: 'Syne', sans-serif;
 }
 
@@ -84,17 +97,17 @@ background vert : #3B8E46
     padding: 10px;
     width: 100%;
     margin-top: 10px;
-    border-color: #EDE2DA;
-    border-left: #EDE2DA;
-    border-top:#EDE2DA;
+    border-color: var(--background-beige);
+    border-left: var(--background-beige);
+    border-top:var(--background-beige);
 }
 
 .MessageContact {
     width: 100%;
     margin-top: 10px;
-    border-color: #EDE2DA;
-    border-left: #EDE2DA;
-    border-top:#EDE2DA;
+    border-color: var(--background-beige);
+    border-left: var(--background-beige);
+    border-top: var(--background-beige);
     border-radius: 5px;
 }
 
@@ -104,13 +117,13 @@ background vert : #3B8E46
     margin-left:30%;
     height: 40px;
     width: 130px;
-    background-color: #E0B9B4 ;
-    color: white; 
+    background-color: var(--pink-color-quantity-button) ;
+    color: var(--white-color); 
     font-family: 'Syne', sans-serif;
     border-radius: 5px;
-    border-color: #E0B9B4;
-    border-bottom: #E0B9B4;
-    border-right: #E0B9B4;
+    border-color: var(--pink-color-quantity-button);
+    border-bottom: var(--pink-color-quantity-button);
+    border-right: var(--pink-color-quantity-button);
 }
 
 /****FORMULAIRE DE COMMANDES*****/
@@ -118,7 +131,7 @@ background vert : #3B8E46
 /**** BTN Quantité ****/
 
 .LabelCommande{
-    color:white; 
+    color:var(--white-color); 
 }
 
 .AdresseCommande,
@@ -131,22 +144,22 @@ background vert : #3B8E46
     border-radius: 5px;
     margin-top: 20px;
     width: 280px;
-    border-color: #3B8E46;
-    border-left: #3B8E46;
-    border-top: #3B8E46;
+    border-color: var(--green-color-title);
+    border-left:var(--green-color-title);
+    border-top: var(--green-color-title);
 }
 
 .btnCommander{
     font-size: 15px;
     margin-left:30%;
     width: 160px;
-    background-color: #E0B9B4 ;
-    color: white; 
+    background-color: var(--pink-color-quantity-button) ;
+    color: var(--white-color); 
     font-family: 'Syne', sans-serif;
     border-radius: 5px;
-    border-color: #E0B9B4;
-    border-bottom: #E0B9B4;
-    border-right: #E0B9B4;
+    border-color: var(--pink-color-quantity-button);
+    border-bottom: var(--pink-color-quantity-button);
+    border-right:var(--pink-color-quantity-button);
     
 }
 
@@ -155,7 +168,7 @@ background vert : #3B8E46
 
 .title-formulaire {
     padding-bottom: 15px;
-    color: white; 
+    color: var(--white-color); 
 }
 
 .formulaire-entier{
@@ -175,7 +188,7 @@ background vert : #3B8E46
 
 .vertical-separator {
     margin-left: 50px;
-    border: 0.2px solid white;
+    border: 0.2px solid var(--white-color);
     margin-top: 55px;
     margin-bottom: 10px;
 }
@@ -191,14 +204,14 @@ background vert : #3B8E46
 
 .minus, .plus{
     cursor: pointer;
-    background-color: #DC9F96;
-    color:white; 
+    background-color: var(--pink-color-nav);
+    color:var(--white-color); 
 	display: flex;
     justify-content: center;
     width: 23px;
     height: 23px;
     border-radius: 0 4px 0 0;
-    border: 1px solid #E0B9B4;
+    border: 1px solid var(--pink-color-quantity-button);
     vertical-align: middle;
     text-align: center;
 }
@@ -206,7 +219,7 @@ background vert : #3B8E46
 .minus{
     border-radius: 0 0 4px 0;
     margin-top: -20px;
-    border-top-color: white
+    border-top-color: var(--white-color);
 }
 
 .number{
@@ -233,26 +246,26 @@ background vert : #3B8E46
 
 
 input{
-    color: grey;
-    border-color: white;
+    color: var(--grey-color);
+    border-color: var(--white-color);
     border-radius: 4px 0 0 4px;
     height: 45px;
     width: 45px;
     text-align: center;
     font-size: 15px;
-    border: 1px solid white;
+    border: 1px solid var(--white-color);
     display: inline-block;
     vertical-align: middle;
 }
 
 .validation-button {
-    border-color: #DC9F96;
-    border-bottom: #DC9F96;
-    border-right: #DC9F96;
+    border-color: var(--pink-color-nav);
+    border-bottom: var(--pink-color-nav);
+    border-right: var(--pink-color-nav);
     border-radius: 5px;
     cursor: pointer;
-    background-color:  #E0B9B4;
-    color: white; 
+    background-color:  var(--pink-color-quantity-button);
+    color: var(--white-color); 
     margin-left: 10px;
     height: 45px;
     width: 71px;
@@ -265,7 +278,7 @@ input{
 
 .elementor hr {
     margin-top: 30px!important;
-    background-color: white!important;
+    background-color: var(--white-color)!important;
 }
 
 .clear {
@@ -276,14 +289,14 @@ input{
 /***** FORMULAIRE ERRONE ***/ 
 
 .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
-    border-color: #DC9F96;
+    border-color: var(--pink-color-nav);
 }
 
 /******REPONSE FORMULAIRE******/
 
 .wpcf7 form.sent .wpcf7-response-output {
-    border-color: #E0B9B4;
-    color: white;
+    border-color: var(--pink-color-quantity-button);
+    color: var(--white-color);
     height: 80px;
     font-size: 20px;
     text-align: center;
@@ -300,7 +313,7 @@ input{
 }
 
 .footer-info{
-    color: black;
+    color: var(--black-color);
     text-decoration: none;
     margin-top: 15px;
     margin-bottom: 5px;
