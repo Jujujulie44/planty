@@ -32,9 +32,9 @@ background vert : #3B8E46 //
 }
 
 
-/*FONT */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&family=Syne&display=swap');
+/******FONT ******/
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&family=Syne&display=swap');
 
 /********HEADER**********/ 
 
@@ -45,10 +45,10 @@ background vert : #3B8E46 //
 }
 
 /*retire le bouton PRIMARY MENU*/
+
 .menu-toggle{
     display: none;
 }
-
 
 /*******NAV**************/
 
@@ -82,8 +82,12 @@ background vert : #3B8E46 //
 }
 
 
-/******FORMULAIRE DE CONTACT*******/
+/**** NOUS RENCONTRER **/ 
 
+.elementor-175 .elementor-element.elementor-element-a5363a4 img {
+    width: 100px!important;
+}
+/******FORMULAIRE DE CONTACT*******/
 
 .elementor-element {
     color: var(--black-color); 
@@ -126,6 +130,7 @@ background vert : #3B8E46 //
     border-right: var(--pink-color-quantity-button);
 }
 
+
 /****FORMULAIRE DE COMMANDES*****/
 
 /**** BTN Quantité ****/
@@ -165,7 +170,6 @@ background vert : #3B8E46 //
 
 /********* Formulaire commandes /DIV Colonnes/ ********/
 
-
 .title-formulaire {
     padding-bottom: 15px;
     color: var(--white-color); 
@@ -198,7 +202,6 @@ background vert : #3B8E46 //
     justify-content: center;
     margin-right: 10%;
 }
-
 
 /****** BOUTONS QUANTITE ****/ 
 
@@ -244,7 +247,6 @@ background vert : #3B8E46 //
     flex-direction: column;
 }
 
-
 input{
     color: var(--grey-color);
     border-color: var(--white-color);
@@ -262,6 +264,8 @@ input{
     border-color: var(--pink-color-nav);
     border-bottom: var(--pink-color-nav);
     border-right: var(--pink-color-nav);
+    border-left: var(--pink-color-nav) ;
+    border-top:  var(--pink-color-nav); 
     border-radius: 5px;
     cursor: pointer;
     background-color:  var(--pink-color-quantity-button);
@@ -269,6 +273,10 @@ input{
     margin-left: 10px;
     height: 45px;
     width: 71px;
+}
+
+.validation-button:hover {
+    background-color:  #C02E44 ;
 }
 
 .quantity-product {
@@ -284,7 +292,6 @@ input{
 .clear {
     clear: both;
 }
-
 
 /***** FORMULAIRE ERRONE ***/ 
 
@@ -304,7 +311,6 @@ input{
     border-radius: 10px;
 }
 
-
 /******** FOOTER *****/ 
 
 .div-footer{
@@ -319,3 +325,234 @@ input{
     margin-bottom: 5px;
     font-family: 'Syne', sans-serif;
 }
+
+
+@media screen and (max-width: 900px) {
+    
+    .custom-logo {
+        margin-top: 15px;
+        width: 100px;
+        height: 20px;
+    }
+
+    .elementor-7 .elementor-element.elementor-element-345080d.e-con {
+        text-align: center;
+    }
+
+    .elementor-7 .elementor-element.elementor-element-605b867.e-con {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .elementor-7 .elementor-element.elementor-element-1ed6acb .elementor-heading-title {
+        text-align: center;
+    }
+
+    .elementor-7 .elementor-element.elementor-element-fdf893c .elementor-heading-title {
+        text-align: center;
+    }
+
+    .e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner {
+        display: none;
+    }
+
+    .elementor-element .elementor-widget-container {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .elementor-175 .elementor-element.elementor-element-a5363a4 img {
+        width: 50px!important;
+    }
+
+    .elementor-175 .elementor-element.elementor-element-a6469f0 img {
+        width: 20%!important;
+    }
+
+    .elementor-175 .elementor-element.elementor-element-a6469f0 img {
+        display: none;
+    }
+
+    .elementor-175 .elementor-element.elementor-element-276ff58 {
+        display: none!important;
+    }
+
+    .e-con>.e-con-inner {
+        justify-content: center!important;
+        width: 100%!important;
+        height: 100%!important;
+    }
+
+    .btnContact {
+        margin: 40px!important;
+    }
+
+    .attachment-large size-large wp-image-96,
+       .attachment-large size-large wp-image-97, 
+       .attachment-large size-large wp-image-98,
+       .attachment-large size-large wp-image-99 {
+        display: inline-block; 
+    }
+
+       .elementor-11 .elementor-element.elementor-element-ad27638,
+       .elementor-11 .elementor-element.elementor-element-3d30e66,
+       .elementor-11 .elementor-element.elementor-element-4f2e6bb,
+       .elementor-11 .elementor-element.elementor-element-509e724 {
+        width: 144px!important;
+    }
+
+    .validation-button {
+        margin-left: 3px; 
+        height: 45px;
+        width: 50px;
+    }
+
+    .formulaire-entier {
+        flex-direction: column;
+    }
+
+    .part1 {
+        margin-left: 40px;
+        padding-top: 30px;
+    }
+
+    .title-formulaire {
+        text-align: center;
+    }
+
+    .btnCommande {
+        justify-content: left;
+    }
+
+    .btnCommander {
+        margin-top: 10px;
+        margin-left: 22%;
+    }
+
+
+    }
+
+
+
+    @media screen and (max-width: 630px) {
+    
+        .custom-logo {
+            font-size: 10px;
+            margin-top: 15px;
+            width: 100px;
+            height: 20px;
+        }
+
+        .site-header a {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .elementor-7 .elementor-element.elementor-element-345080d.e-con {
+            text-align: center;
+        }
+
+        .elementor-7 .elementor-element.elementor-element-605b867.e-con {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .elementor-7 .elementor-element.elementor-element-1ed6acb .elementor-heading-title {
+            text-align: center;
+        }
+
+        .elementor-7 .elementor-element.elementor-element-fdf893c .elementor-heading-title {
+            text-align: center;
+        }
+
+        .e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner {
+            display: none;
+        }
+
+        .elementor-element .elementor-widget-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .elementor-175 .elementor-element.elementor-element-a5363a4 img {
+            width: 60px!important;
+        }
+
+        .elementor-175 .elementor-element.elementor-element-a6469f0 img {
+            width: 20%!important;
+        }
+
+        .elementor-175 .elementor-element.elementor-element-a6469f0 img {
+            display: none;
+        }
+
+        .elementor-175 .elementor-element.elementor-element-276ff58 {
+            display: none!important;
+        }
+
+        .elementor-175 .elementor-element.elementor-element-5e58666.elementor-element {
+            display: flex;
+            justify-content: center;
+        }
+
+        .e-con>.e-con-inner {
+            justify-content: center!important;
+            width: 100%!important;
+            height: 100%!important;
+        }
+
+        .btnContact {
+            margin: 40px!important;
+        }
+
+       .attachment-large size-large wp-image-96,
+       .attachment-large size-large wp-image-97, 
+       .attachment-large size-large wp-image-98,
+       .attachment-large size-large wp-image-99 {
+        display: inline-block; 
+       }
+
+       .elementor-11 .elementor-element.elementor-element-ad27638,
+       .elementor-11 .elementor-element.elementor-element-3d30e66,
+       .elementor-11 .elementor-element.elementor-element-4f2e6bb,
+       .elementor-11 .elementor-element.elementor-element-509e724 {
+        width: 120px!important;
+        }
+
+        .validation-button {
+            margin-left: 3px;
+            height: 45px;
+            width: 26px;
+        }
+
+        .quantity-product {
+            padding-left: 4px;
+        }
+
+        .formulaire-entier {
+            flex-direction: column;
+        }
+
+        .part1 {
+            margin-left: 40px;
+            padding-top: 30px;
+        }
+
+        .title-formulaire {
+            text-align: center;
+        }
+
+
+        .btnCommande {
+            justify-content: left;
+        }
+
+        .btnCommander {
+            margin-top: 10px;
+            margin-left: 22%;
+        }
+
+    }
