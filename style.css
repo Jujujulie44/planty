@@ -556,3 +556,17 @@ input{
         }
 
     }
+
+/*
+    @media screen and (max-width: 320px) {
+
+        .elementor-7 .elementor-element.elementor-element-c9832ac .elementor-heading-title {
+            font-size: 10px!important;
+        }
+
+        .main-navigation ul {
+            display: flex;
+            justify-content: center;
+
+    }
+*/
