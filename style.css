@@ -101,7 +101,7 @@ body {
 }
 
 #menu-item-47 a {
-    color: white;
+    color: var(--white-color);
 }
 
 .site-branding {
@@ -324,7 +324,7 @@ input{
 }
 
 .validation-button:hover {
-    background-color:  #C02E44 ;
+    background-color:  var(--fraise-color);
 }
 
 .quantity-product {
@@ -359,6 +359,17 @@ input{
     border-radius: 10px;
 }
 
+/*********IMAGE FOOTER******/ 
+
+.elementor-7 .elementor-element.elementor-element-cf8c9ae {
+    display: contents;
+}
+
+.elementor-175 .elementor-element.elementor-element-106ba57:not(.elementor-motion-effects-element-type-background), .elementor-175 .elementor-element.elementor-element-106ba57 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    padding: 0;
+    background-color: var(--background-beige);
+}
+
 /******** FOOTER *****/ 
 
 .div-footer{
@@ -375,7 +386,14 @@ input{
 }
 
 
+
+/***** MEDIAS QUERIES ****/ 
+
 @media screen and (max-width: 900px) {
+
+    .site {
+        width: min-content;
+    }
     
     .custom-logo {
         margin-top: 15px;
@@ -482,9 +500,11 @@ input{
 
     }
 
-
-
     @media screen and (max-width: 630px) {
+
+        .site {
+            width: min-content;
+        }
     
         .custom-logo {
             font-size: 10px;
@@ -605,16 +625,9 @@ input{
 
     }
 
-/*
+
     @media screen and (max-width: 320px) {
-
-        .elementor-7 .elementor-element.elementor-element-c9832ac .elementor-heading-title {
-            font-size: 10px!important;
+        .site {
+            width: min-content;
         }
-
-        .main-navigation ul {
-            display: flex;
-            justify-content: center;
-
     }
-*/
