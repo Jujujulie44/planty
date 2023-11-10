@@ -29,6 +29,12 @@ background vert : #3B8E46 //
   --white-color : #FFFFFF; /* var(--white-color)*/
   --black-color : #000; /* var(--black-color)*/
   --grey-color :  grey; /* var(--grey-color)*/ 
+  --fraise-color:  #C02E44 ;/*var(--fraise-color)*/
+}
+
+
+body {
+    margin: 0;
 }
 
 
@@ -52,21 +58,66 @@ background vert : #3B8E46 //
 
 /*******NAV**************/
 
-.menu-item{
-    list-style: none;
+.site{
+    box-sizing: border-box;
+}
+
+.admin-link {
+    padding-top: 25px;
+    text-align: center;
+    width: 170px;
+}
+
+.admin-link:hover{
+    transform: scale(1.05);
+}
+
+.Admin-button {
+    color:var(--black-color);
+    padding-right: 40px;
 }
 
 
+.menu-item {
+    padding-top: 25px;
+    height: 54px;
+    width: 170px;
+    list-style: none;
+}
+
+.menu-item:nth-child(1):hover {
+    transform: scale(1.05);
+}
+
+#menu-item-47 {
+    font-weight:420;
+    background-color: var(--pink-color-nav);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#menu-item-47:hover {
+    background-color: var(--fraise-color);
+}
+
+#menu-item-47 a {
+    color: white;
+}
+
+.site-branding {
+    padding-top: 28px;
+}
+
 .site-header {
+    margin-top: -24px;
     display: flex;
     justify-content: space-between;
 }
 
-.site-header a  {
-    color: var(--black-color);
+.site-header a {
+    margin-left: 35px;
     text-decoration: none;
-    padding-right: 30px;
-    padding-left: 30px;
+    color: var(--black-color); 
 }
 
 .main-navigation ul {
@@ -75,13 +126,10 @@ background vert : #3B8E46 //
     font-family: 'Syne', sans-serif;
 }
 
-.main-navigation  ul li:hover {
-   /* width:100px;
-    height: 100px;*/
-    background-color:var(--pink-color-nav);
+.main-navigation {
+    height: 85px;
 }
-
-
+s
 /**** NOUS RENCONTRER **/ 
 
 .elementor-175 .elementor-element.elementor-element-a5363a4 img {
