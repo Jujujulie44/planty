@@ -345,6 +345,7 @@ input{
 
 .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
     border-color: var(--pink-color-nav);
+    color: white;
 }
 
 /******REPONSE FORMULAIRE******/
