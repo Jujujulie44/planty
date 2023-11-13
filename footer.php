@@ -11,14 +11,16 @@
 		<div class="div-footer">
 		<?php
 			if( has_nav_menu( 'planty-footer' ) ) :
+
 				wp_nav_menu( [
 					'menu' => 'planty-footer'
 				] );
+				
 			endif;
 		?>
-		</div><!-- .site-info -->
+		</div>
 
-	</footer><!-- #colophon -->
+	</footer>
 
 <?php wp_footer(); ?>
 

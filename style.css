@@ -372,18 +372,25 @@ input{
 
 /******** FOOTER *****/ 
 
+#menu-item-171 a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Syne', sans-serif;
+}
+
+#menu-menu-footer {
+    margin: 0px;
+}
+
 .div-footer{
     display: flex;
     justify-content: center;
 }
 
-.footer-info{
-    color: var(--black-color);
-    text-decoration: none;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-family: 'Syne', sans-serif;
-}
+
+
+
+
 
 
 
