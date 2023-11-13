@@ -9,7 +9,13 @@
 	<footer>
 
 		<div class="div-footer">
-			<a class="footer-info" href="<?php echo home_url('/mentionslegales/'); ?>">Mentions légales</a>
+		<?php
+			if( has_nav_menu( 'planty-footer' ) ) :
+				wp_nav_menu( [
+					'menu' => 'planty-footer'
+				] );
+			endif;
+		?>
 		</div><!-- .site-info -->
 
 	</footer><!-- #colophon -->
