@@ -26,6 +26,7 @@ function planty_add_admin_link_to_nav_menu($items, $args) {
             $items = implode('</li>', $items_array);
         }
     }
+
     return $items;
 }
 
