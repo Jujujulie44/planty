@@ -7,18 +7,6 @@ Version: 1.0.0
 */
 
 
-/*
-COLOR SITE 
-vert titres :#3B8E46 //
-ROSé titre : #d2776a 
-rosé (bouton nav): #DC9F96//
-rosé clair (bouton site et +/- page commander) : #E0B9B4 //
-fraise : #C02E44 
-white : #FFFFFF //
-background beige: #ede2da //
-background vert : #3B8E46 //
-*/
-
 
 
 :root {
@@ -388,12 +376,6 @@ input{
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
-
 
 
 /***** MEDIAS QUERIES ****/ 

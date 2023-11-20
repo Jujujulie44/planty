@@ -2,11 +2,14 @@
 
 function planty_add_admin_link_to_nav_menu($items, $args) {
 
-    // Je vérifie si l'utilisateur est connecté
+   // FOOTER
 
     if($args->menu == "planty-footer")  {
         return $items;
     }
+
+    //NavAdMIN 
+    // Je vérifie si l'utilisateur est connecté
 
     if (is_user_logged_in()) {
 
